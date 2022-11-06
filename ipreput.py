@@ -6,6 +6,16 @@ import argparse
 
 
 #Twitter:@r00t_nasser
+def whitespace():
+	with open('result/result.csv','r') as f:
+		content = f.readlines()
+		cleaned = ''
+		for line in content:
+			if line != '\n':
+				cleaned += line
+		print(cleaned.replace(" ",""),file=open('result/space.csv', 'w'))
+
+
 def clear():
 	json = open("result/result.json","w")
 	json.close()
@@ -42,7 +52,7 @@ def neutrinoapi():
 		for key, value in data.items():
 			dic = [value]
 		csv_columns = ['abuseConfidenceScore','countryCode','domain','hostnames','ipAddress','ipVersion','isPublic','isWhitelisted','isp','lastReportedAt','numDistinctUsers','totalReports','usageType']
-		
+		print(dic)
 		try:
 			with open(csv_file, 'a') as csvfile:
 				
@@ -59,3 +69,4 @@ def neutrinoapi():
 clear()
 neutrinoapi()
 temp()
+whitespace()
