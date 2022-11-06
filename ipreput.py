@@ -7,19 +7,20 @@ import argparse
 
 #Twitter:@r00t_nasser
 def whitespace():
-	with open('result/result.csv','r') as f:
+	with open('temp/spaces.csv','r') as f:
 		content = f.readlines()
 		cleaned = ''
 		for line in content:
 			if line != '\n':
 				cleaned += line
-		print(cleaned.replace(" ",""),file=open('result/space.csv', 'w'))
+		print(cleaned.replace(" ",""),file=open('result/result.csv', 'w'))
 
 
 def clear():
 	json = open("result/result.json","w")
 	json.close()
-	excel = open("result/result.csv","w")
+	excel = open("temp/spaces.csv","w")
+
 	excel.close()
 def temp():
 	temp = open("temp/temp.json","w")
@@ -31,7 +32,7 @@ def neutrinoapi():
 	args = parser.parse_args()
 	temp = 0
 	ips = open('ips.txt', 'r')
-	csv_file = "result/result.csv"
+	csv_file = "temp/spaces.csv"
 	for ip in ips:
 		url = 'https://api.abuseipdb.com/api/v2/check'
 		querystring = {
