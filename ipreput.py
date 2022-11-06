@@ -41,7 +41,7 @@ def neutrinoapi():
 		}
 		headers = {
         'Accept': 'application/json',
-        'Key': 'your-key'
+        'Key': 'api-key'
         }
 		response = requests.request(method='GET', url=url, headers=headers, params=querystring)
 		decodedResponse = json.loads(response.text)
