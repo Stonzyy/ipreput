@@ -1,5 +1,5 @@
 # ipreput
-this tool made to check multiple ip reputation 
+this tool made to check multiple ip reputation and save the result into a CSV file to clearly handle it with Excel
 
 # install & Run
 
@@ -23,7 +23,7 @@ this tool made to check multiple ip reputation
 https://user-images.githubusercontent.com/33039121/200171722-85d5803b-5626-444c-9cd2-4ef76129e356.mp4
 
 
-.3 Get The key 
+.3 Get The API key 
 
 ```
 
