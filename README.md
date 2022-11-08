@@ -17,12 +17,14 @@ this tool made to check multiple ip reputation and save the result into a CSV fi
 
 2.2 - pip install -r requirements.txt
 
-2.3 - python3 ipreput.py -i ips.txt -k key.txt
+2.3 - python ipreput.py -i ips.txt -k key.txt    (Windows)
+
+2.4 - python3 ipreput.py -i ips.txt -k key.txt    (Linux)
 
 ```
 # Demo
 
-https://user-images.githubusercontent.com/33039121/200171722-85d5803b-5626-444c-9cd2-4ef76129e356.mp4
+https://user-images.githubusercontent.com/33039121/200557532-0949c425-62c2-418e-a374-df485eafaf3a.mp4
 
 
 # result.csv
