@@ -28,12 +28,16 @@ def temp():
 
 def neutrinoapi():
 	parser = argparse.ArgumentParser(description = 'description')
-	parser.add_argument("-i", "--ips list", required=True)
-	parser.add_argument("-k", "--api key", required=True)
+	parser.add_argument("-i", "--ips", required=True)
+	parser.add_argument("-k", "--apikey", required=True)
 	args = parser.parse_args()
 	temp = 0
 	#print(args.key)
-	ips = open(f'{args.file}', 'r')
+	keys = open(f'{args.apikey}', 'r')
+	for value in keys:
+		api = value
+	
+	ips = open(f'{args.ips}', 'r')
 	csv_file = "temp/spaces.csv"
 	for ip in ips:
 		url = 'https://api.abuseipdb.com/api/v2/check'
@@ -43,7 +47,7 @@ def neutrinoapi():
 		}
 		headers = {
         'Accept': 'application/json',
-        'Key': args.key
+        'Key': api
         }
 		response = requests.request(method='GET', url=url, headers=headers, params=querystring)
 		decodedResponse = json.loads(response.text)
