@@ -1,5 +1,2 @@
 argparse
-sys
-json
-csv
 requests
