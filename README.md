@@ -13,9 +13,11 @@ this tool made to check multiple ip reputation and save the result into a CSV fi
 
 ```
 
-2.1 - cd ipreput; pip install -r requirements.txt
+2.1 - cd ipreput 
 
-2.2 - python3 ipreput.py -i ips.txt
+2.2 - pip install -r requirements.txt
+
+2.3 - python3 ipreput.py -i ips.txt -k key.txt
 
 ```
 # Demo
@@ -36,7 +38,7 @@ https://user-images.githubusercontent.com/33039121/200171722-85d5803b-5626-444c-
 3.1 - create account at https://www.abuseipdb.com
 3.2 - go to https://www.abuseipdb.com/account/api then click to creat key
 3.3 - copy the key and open the ipreput.py
-3.4 - on the ipreput.py replace <api-key> with your key
+3.4 - on the key.txt replace <api-key> with your key
 
 ```
 # API key 
