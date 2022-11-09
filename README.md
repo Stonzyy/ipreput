@@ -1,5 +1,5 @@
 # ipreput
-this tool made to check multiple ip reputation and save the result into a CSV file to clearly handle it with Excel
+A python3 program to check multiple ip reputation and save the result into a CSV file to clearly handle it with Excel
 
 # install & Run
 
