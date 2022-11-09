@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/33039121/200557532-0949c425-62c2-418e-
 
 # result.csv
 
-![csv](https://user-images.githubusercontent.com/33039121/200239486-89ddc2cd-5e6f-4898-beeb-2e931d207a93.PNG)
+![csv-ipreput](https://user-images.githubusercontent.com/33039121/200704961-1adb1e79-8b68-4cea-896f-4ce3bc555c52.PNG)
 
 
 
