@@ -27,7 +27,7 @@ A python3 program to check multiple ip reputation and save the result into a CSV
 https://user-images.githubusercontent.com/33039121/200557532-0949c425-62c2-418e-a374-df485eafaf3a.mp4
 
 
-# result.csv
+# result csv
 
 ![ipreput-result](https://user-images.githubusercontent.com/33039121/200705132-4888695a-feb9-45d6-930e-637c548d0a5b.PNG)
 
