@@ -71,7 +71,7 @@ def neutrinoapi():
 					writer.writeheader()
 				temp += 1
 				for data in dic:
-					print(data)
+					
 					writer.writerow(data)
 		
 		except IOError:
