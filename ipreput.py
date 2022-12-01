@@ -104,8 +104,8 @@ def temp():
 
 
 def main():
-	abuseipdb()
 	clear()
+	abuseipdb()
 	temp()
 	whitespace()
 
