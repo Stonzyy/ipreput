@@ -17,7 +17,7 @@ A python3 program to check multiple ip reputation and save the result into a CSV
 
 2.2 - pip install -r requirements.txt
 
-2.3 - add your abuseipdb key in key.txt
+2.3 - on the key.txt replace <api-key> with your key
 
 2.3 - python ipreput.py -i ips.txt     (Windows)
 
