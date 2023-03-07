@@ -19,9 +19,11 @@ A python3 program to check multiple ip reputation and save the result into a CSV
 
 2.3 - on the key.txt replace <api-key> with your key
 
-2.3 - python ipreput.py -i ips.txt     (Windows)
+2.4 - add all ips in ips.txt file
 
-2.4 - python3 ipreput.py -i ips.txt   (Linux)
+2.5 - python ipreput.py -i ips.txt     (Windows)
+
+2.6 - python3 ipreput.py -i ips.txt   (Linux)
 
 ```
 # Demo
