@@ -17,9 +17,11 @@ A python3 program to check multiple ip reputation and save the result into a CSV
 
 2.2 - pip install -r requirements.txt
 
-2.3 - python ipreput.py -i ips.txt -k key.txt    (Windows)
+2.3 - add your abuseipdb key in key.txt
 
-2.4 - python3 ipreput.py -i ips.txt -k key.txt    (Linux)
+2.3 - python ipreput.py -i ips.txt     (Windows)
+
+2.4 - python3 ipreput.py -i ips.txt   (Linux)
 
 ```
 # Demo
