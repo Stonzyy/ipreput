@@ -14,11 +14,10 @@ import time
 def abuseipdb():
 	parser = argparse.ArgumentParser(description = 'description')
 	parser.add_argument("-i", "--ips", required=True)
-	parser.add_argument("-k", "--apikey", required=True)
 	args = parser.parse_args()
 	temp = 0
 	#print(args.key)
-	keys = open(f'{args.apikey}', 'r')
+	keys = open(f'key.txt', 'r')
 	for value in keys:
 		api = value
 	
@@ -39,9 +38,9 @@ def abuseipdb():
 			
 			response = requests.request(method='GET', url=url, headers=headers, params=querystring)
 			while not response.ok:
-				print('Error')
-				time.sleep(5)
-				response = requests.request(method='GET', url=url, headers=headers, params=querystring)
+				print('Server error')
+				time.sleep(10)
+				response = requests.request(method='GET', url=url, headers=headers,params=querystring)
 
 
 			decodedResponse = json.loads(response.text)
@@ -55,7 +54,7 @@ def abuseipdb():
 				dic = [value]
 				csv_columns = ['abuseConfidenceScore','countryCode','domain','hostnames','ipAddress','ipVersion','isPublic','isWhitelisted','isp','lastReportedAt','numDistinctUsers','totalReports','usageType']
 				print(dic)
-		except:
+		except: 
 			raise
 		try:
 			with open(csv_file, 'a') as csvfile:
