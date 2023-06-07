@@ -52,7 +52,7 @@ def abuseipdb():
 		
 			for key, value in data.items():
 				dic = [value]
-				csv_columns = ['abuseConfidenceScore','countryCode','domain','hostnames','ipAddress','ipVersion','isPublic','isWhitelisted','isp','lastReportedAt','numDistinctUsers','totalReports','usageType']
+				csv_columns = ['abuseConfidenceScore','countryCode','domain','hostnames','ipAddress','ipVersion','isTor','isPublic','isWhitelisted','isp','lastReportedAt','numDistinctUsers','totalReports','usageType']
 				print(dic)
 		except: 
 			raise
